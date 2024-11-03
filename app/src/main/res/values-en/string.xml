@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">G-Pomadoro</string>
+
+    <string name="title_1">Main</string>
+    <string name="title_2">History</string>
+    <string name="title_3">Settings</string>
+</resources>

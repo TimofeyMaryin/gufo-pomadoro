@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">G-Pomadoro</string>
+
+    <string name="title_1">Главная</string>
+    <string name="title_2">История</string>
+    <string name="title_3">Настройка</string>
 </resources>
