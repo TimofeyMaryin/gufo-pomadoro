@@ -12,14 +12,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
-import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -62,7 +59,7 @@ private fun ColumnScope.BottomBar(
         ) {
             BottomBarItem(
                 ic = Icons.Default.Star,
-                title = R.string.title_1,
+                title = R.string.title_main,
                 status = viewModel.navControllerStatusScreen == Screen.MainScreen.route
             ) {
                 if (viewModel.navControllerStatusScreen != Screen.MainScreen.route) {
@@ -72,7 +69,7 @@ private fun ColumnScope.BottomBar(
 
             BottomBarItem(
                 ic = Icons.Default.Menu,
-                title = R.string.title_2,
+                title = R.string.title_history,
                 status = viewModel.navControllerStatusScreen == Screen.HistoryScreen.route
             ) {
                 if (viewModel.navControllerStatusScreen != Screen.HistoryScreen.route) {
@@ -82,7 +79,7 @@ private fun ColumnScope.BottomBar(
 
             BottomBarItem(
                 ic = Icons.Default.Settings,
-                title = R.string.title_3,
+                title = R.string.title_settings,
                 status = viewModel.navControllerStatusScreen == Screen.SettingsScreen.route
             ) {
                 if (viewModel.navControllerStatusScreen != Screen.SettingsScreen.route) {

@@ -11,6 +11,7 @@ import androidx.compose.ui.Modifier
 @Composable
 fun ColumnScope.Container(
     weight: Float,
+    alignment: Alignment = Alignment.Center,
     content: @Composable () -> Unit
 ) {
 
@@ -18,7 +19,7 @@ fun ColumnScope.Container(
         modifier = Modifier
             .fillMaxSize()
             .weight(weight),
-        contentAlignment = Alignment.Center
+        contentAlignment = alignment,
     ) {
         content()
     }
@@ -29,6 +30,7 @@ fun ColumnScope.Container(
 @Composable
 fun RowScope.Container(
     weight: Float,
+    alignment: Alignment = Alignment.Center,
     content: @Composable () -> Unit
 ) {
 
@@ -36,7 +38,7 @@ fun RowScope.Container(
         modifier = Modifier
             .fillMaxSize()
             .weight(weight),
-        contentAlignment = Alignment.Center
+        contentAlignment = alignment,
     ) {
         content()
     }

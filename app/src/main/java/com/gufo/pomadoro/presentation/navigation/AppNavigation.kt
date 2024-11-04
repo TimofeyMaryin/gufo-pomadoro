@@ -9,6 +9,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.gufo.pomadoro.presentation.fragments.MainFragment
+import com.gufo.pomadoro.presentation.fragments.SettingsFragment
 import com.gufo.pomadoro.presentation.utils.FragmentManager
 
 @Composable
@@ -27,19 +29,21 @@ fun AppNavigation() {
             this.composable(
                 route = Screen.MainScreen.route
             ) {
-                Box(modifier = Modifier.fillMaxSize().background(Color.Red))
+                MainFragment()
             }
 
             this.composable(
                 route = Screen.HistoryScreen.route
             ) {
-                Box(modifier = Modifier.fillMaxSize().background(Color.LightGray))
+                Box(modifier = Modifier
+                    .fillMaxSize()
+                    .background(Color.LightGray))
             }
 
             this.composable(
                 route = Screen.SettingsScreen.route
             ) {
-                Box(modifier = Modifier.fillMaxSize().background(Color.Yellow))
+                SettingsFragment()
             }
 
         }
